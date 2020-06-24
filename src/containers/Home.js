@@ -1,6 +1,5 @@
 import React from "react";
 import Card from "../components/Card";
-import Sidebar from "../components/Sidebar";
 import RecentPosts from "./RecentPosts";
 import { Link } from "react-router-dom";
 import blogData from "../data/blog.json";

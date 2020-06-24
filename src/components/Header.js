@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 /**
  * @author
@@ -9,9 +10,9 @@ const Header = (props) => {
   return (
     <header className="header">
       <nav className="headerMenu">
-        <a href="#">Home</a>
-        <a href="#">About Us</a>
-        <a href="#">Contact Us</a>
+        <Link to="/">Home</Link>
+        <Link to="/">About Us</Link>
+        <Link to="/">Contact Us</Link>
       </nav>
       <div>socila Media links</div>
     </header>

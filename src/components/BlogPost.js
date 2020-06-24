@@ -18,13 +18,13 @@ const BlogPost = (props) => {
     blogImage: "",
     blogText: "",
   });
-  const [slug, setSlug] = useState("");
+  // const [slug, setSlug] = useState("");
 
   useEffect(() => {
     const slug = props.match.params.slug;
     const post = blogPost.data.find((post) => post.slug === slug);
     setPost(post);
-    setSlug(slug);
+    // setSlug(slug);
   }, [post, props.match.params.slug]);
 
   if (post.blogImage === "") return null;

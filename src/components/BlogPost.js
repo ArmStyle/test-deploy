@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/img-redundant-alt */
 import React, { useState, useEffect } from "react";
 import Card from "./Card.js";
 import blogPost from "../data/blog.json";
@@ -21,12 +22,12 @@ const BlogPost = (props) => {
 
   useEffect(() => {
     const slug = props.match.params.slug;
-    const post = blogPost.data.find((post) => post.slug == slug);
+    const post = blogPost.data.find((post) => post.slug === slug);
     setPost(post);
     setSlug(slug);
   }, [post, props.match.params.slug]);
 
-  if (post.blogImage == "") return null;
+  if (post.blogImage === "") return null;
 
   return (
     <div className="blogPostContainer">

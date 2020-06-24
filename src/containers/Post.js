@@ -1,8 +1,6 @@
 import React from "react";
-// import Card from '../../components/UI/Card';
-import BlogPost from "../components/BlogPost.js";
-// import Sidebar from '../../components/Sidebar';
-import Footer from "../components/Footer.js";
+import BlogPost from "../components/BlogPost";
+import Layout from "../components/Layout";
 
 /**
  * @author
@@ -13,9 +11,9 @@ const Post = (props) => {
   console.log(props);
 
   return (
-    <Footer>
+    <Layout>
       <BlogPost {...props} />
-    </Footer>
+    </Layout>
   );
 };
 

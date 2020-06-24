@@ -9,7 +9,7 @@ import Sidebar from "./Sidebar";
 const Layout = (props) => {
   return (
     <React.Fragment>
-      <div className="container">
+      <div className="layout">
         {props.children}
         <Sidebar />
       </div>
